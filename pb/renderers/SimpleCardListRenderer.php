@@ -23,6 +23,13 @@ class SimpleCardListRenderer extends HtmlRenderer
     </head>
     <body>
     $body_content
+    <br />
+        <br />
+        <br />
+        <div style=\"text-align: center; color: #444\">
+            $projectBrowser->copyright
+        </div>
+        <br />
     </body>
 </html>";
         return $page;
