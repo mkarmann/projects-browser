@@ -1,0 +1,10 @@
+{
+  "name": "example project",
+  "short-description": "A hello world page.",
+  "description": "This web page is a simple 'Hello world' example.",
+  "date": "2020-04-24",
+  "link": null,
+  "tags": [
+    "html"
+  ]
+}

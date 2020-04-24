@@ -1,0 +1,11 @@
+{
+  "name": "example project",
+  "short-description": "An example project",
+  "description": "This web page has a title and content.",
+  "date": "2020-04-24",
+  "link": null,
+  "tags": [
+    "html",
+    "css"
+  ]
+}

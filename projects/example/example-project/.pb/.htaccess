@@ -1,0 +1,5 @@
+
+<Files "info.json|description.html">
+Order Allow,Deny
+Deny from All
+</Files>
