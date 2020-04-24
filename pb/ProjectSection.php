@@ -10,4 +10,16 @@ class ProjectSection extends HtmlComponent
     {
         return $renderer->renderProjectSection($this);
     }
+
+    private function build_sorter($key)
+    {
+        return function ($a, $b) use ($key) {
+            return strnatcmp($a->{$key}, $b->{$key});
+        };
+    }
+
+    public function sort($sortBy = 'date')
+    {
+        usort($this->projects, $this->build_sorter($sortBy));
+    }
 }

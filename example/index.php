@@ -1,10 +1,10 @@
 <?php
 include(dirname(__DIR__) . '/pb/ProjectBrowser.php');
-include(dirname(__DIR__) . '/renderers/SimpleListRenderer.php');
+include(dirname(__DIR__) . '/pb/renderers/SimpleCardListRenderer.php');
 
 // create a new browser
 $pb = new ProjectBrowser();
-$pb->title = 'Example Projects';
+$pb->title = 'My Projects';
 $pb->copyright = '&copy; 2020 John Doe';
 
 // load the projects from the directory
@@ -15,11 +15,11 @@ if (!$projectSection) {
 }
 
 // add some additional notes
-$projectSection->name = 'Projects';
-$projectSection->description = 'Some example projects';
+$projectSection->name = 'My Projects';
+$projectSection->description = 'Here are my projects';
 
 // add the section to the project browser
 $pb->addSection($projectSection);
 
 // return the html to the client
-echo $pb->getHtml(new SimpleListRenderer());
+echo $pb->getHtml(new SimpleCardListRenderer());

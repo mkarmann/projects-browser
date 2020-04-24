@@ -1,9 +1,8 @@
 {
-  "name": "example project",
-  "shortDescription": "A test page",
+  "name": "Test Page",
+  "shortDescription": "Another page which is just a placeholder.",
   "description": "This web page has a title and content.",
-  "date": "2020-04-24",
-  "link": null,
+  "date": "2020-01-10",
   "tags": [
     "html",
     "css"

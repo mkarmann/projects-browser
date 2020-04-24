@@ -34,6 +34,7 @@ class ProjectBrowser extends HtmlComponent
                 $projectSection->projects[] = $proj;
             }
         }
+        $projectSection->sort();
 
         return $projectSection;
     }

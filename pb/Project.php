@@ -12,6 +12,11 @@ class Project extends HtmlComponent
     public $link = null;
     public $tags = array();
 
+    function __construct()
+    {
+        $this->date = date("Y-m-d");
+    }
+
     public function getHtml($renderer)
     {
         return $renderer->renderProject($this);

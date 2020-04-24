@@ -1,9 +1,8 @@
 {
-  "name": "example project",
+  "name": "Hello World",
   "shortDescription": "A hello world page.",
   "description": "This web page is a simple 'Hello world' example.",
-  "date": "2020-04-24",
-  "link": null,
+  "date": "2020-02-24",
   "tags": [
     "html"
   ]

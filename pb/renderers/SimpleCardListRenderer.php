@@ -1,6 +1,6 @@
 <?php
 
-class SimpleListRenderer extends HtmlRenderer
+class SimpleCardListRenderer extends HtmlRenderer
 {
 
     public function renderProjectBrowser($projectBrowser)
@@ -31,11 +31,12 @@ class SimpleListRenderer extends HtmlRenderer
     public function renderProject($project)
     {
         $tags = implode(' - ', $project->tags);
+        $date = date_create_from_format('Y-m-d', $project->date)->format('M. Y');
         return "<a href=\"$project->link\">
             <div class=\"proj-container\">
                 <img src=\"$project->thumbnail\" class=\"thumbnail\">
                 <div class=\"command\">
-                    Run app
+                    Open
                 </div>
                 <div class=\"text\">
                     <div class=\"headline\">$project->name</div>
@@ -45,7 +46,7 @@ class SimpleListRenderer extends HtmlRenderer
                     $tags
                 </div>
                 <div class=\"hint-top\">
-                    Feb. 2019
+                    $date
                 </div>
             </div>
         </a>";
