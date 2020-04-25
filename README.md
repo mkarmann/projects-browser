@@ -3,6 +3,13 @@
 
 This small php library makes it easy to display projects on your web page.
 
+- [About](#about)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Add your own projects](#Add-your-own-projects)
+- [Customize the page layout](#Customize-the-page-layout)
+
+
 ## About
 The library is written in an object oriented style and structured a bit like a content management system.
 You can add projects directly in your script or specify a directory and the ProjectBrowser will look for all the subdirectories and list them as projects. This may not be the most efficient way but makes it very simple to use.
