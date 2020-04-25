@@ -20,7 +20,7 @@ Just copy the folders `pb` and `example` in one folder of your php server.
 You should then be able to open the example page `<url_to_the_folder_on_your_server>/example/index.php` in your browser.
 
 ## Add your own projects
-In the example you can see how to add your own projects and setup the additional information:
+In the [example/index.php](example/index.php) script you can see how to add your own projects and setup the additional information:
 ```php
 <?php
 include(dirname(__DIR__) . '/pb/ProjectBrowser.php');
