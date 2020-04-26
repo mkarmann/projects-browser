@@ -55,7 +55,6 @@ class ProjectBrowser extends HtmlComponent
             $this->errorMessages[] = $info_file . ' was not found and the project was loaded empty';
             $project->name = $path;
         }
-        echo '<br>';
         if ($project->link == null) {
             $project->link = "./$path";
         }
