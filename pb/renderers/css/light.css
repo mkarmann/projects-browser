@@ -68,11 +68,13 @@ html {
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1), -2px 5px 25px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease-out;
+    transition: box-shadow 0.2s ease-out, transform 0.1s ease-out;
+    transform: perspective(1rem) translateZ(0rem);
 }
 
 .proj-container:hover {
     box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.2), -2px 5px 25px rgba(0, 0, 0, 0.2);
+    transform: perspective(1rem) translateZ(0.02rem);
 }
 
 .proj-container > .thumbnail {
